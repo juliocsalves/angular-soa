@@ -1,0 +1,36 @@
+.container__small-card {
+  width: 700px;
+}
+
+.container__small-card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.small-card__photo>img {
+  width: 200px;
+}
+
+
+.container__small-card__separator {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.small-card__title {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.small-card__title>h1>a {
+  text-decoration: none;
+  font-size: 20px;
+  color:  rgb(209, 209, 209);
+}
+
+.small-card__title>h1>a:hover {
+  color: rgb(121, 119, 119);
+  text-decoration: none;
+  font-size: 20px;
+}

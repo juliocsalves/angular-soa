@@ -1,0 +1,53 @@
+.container__big-card {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.big-card__title {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.big-card__title > h1 {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.big-card__description {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.big-card__description > a {
+  text-decoration: none;
+  color:  rgb(160, 159, 159);
+}
+
+.big-card__description > a > p:hover {
+  color: rgb(121, 119, 119);
+  text-decoration: none;
+}
+
+.big-card__photo > a > img {
+  width: 100%;
+  min-width: 400px;
+}
+
+.big-card__title > a {
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.big-card__title > a:hover {
+  text-decoration: none;
+  color: rgb(121, 119, 119);
+}

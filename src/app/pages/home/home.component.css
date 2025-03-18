@@ -1,0 +1,14 @@
+header{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.container__articles {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+

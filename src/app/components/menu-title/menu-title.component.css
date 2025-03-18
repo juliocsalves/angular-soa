@@ -1,0 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/carnivalee-freakshow');
+.container__menu-title h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 135px;
+  font-family: 'Carnivalee Freakshow', sans-serif;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Garantindo o alinhamento vertical */
+}
+
+.container__menu-title hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}

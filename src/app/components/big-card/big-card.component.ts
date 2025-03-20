@@ -9,13 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
   @Input()
-  photoCover: string = "https://images.mubicdn.net/images/film/184442/cache-269638-1534418507/image-w1280.jpg?";
+  photoCover: string = "";
 
   @Input()
-  cardTittle: string = "Sons of Anarchy";
+  cardTittle: string = "";
 
   @Input()
-  cardDescription: string = "Um homem na casa dos 30 anos luta para encontrar um equilíbrio em sua vida entre ser um novo pai e seu envolvimento em um clube de motociclistas 1%.";
+  cardDescription: string = "";
 
   constructor() {
 

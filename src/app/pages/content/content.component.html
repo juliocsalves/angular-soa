@@ -1,0 +1,20 @@
+<div class="body__container">
+  <div  class="container__content">
+    <div class="content__cover">
+      <img src="{{ photocover }}" alt="cover">
+    </div>
+    <div class="content__title">
+      <h1>{{ contentTitle }}</h1>
+      <hr>
+    </div>
+    <div class="content__description">
+      <p> {{ contentDescription }}</p>
+    </div>
+    <a [routerLink]="['/']"> << Voltar</a>
+  </div>
+</div>
+<!-- <div *ngIf="data">
+  <h1>{{ data.title }}</h1>
+  <img [src]="data.photo" alt="Image">
+  <p>{{ data.description }}</p>
+</div> -->

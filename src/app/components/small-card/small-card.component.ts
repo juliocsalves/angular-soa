@@ -1,19 +1,31 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-small-card',
+  imports: [CommonModule, RouterModule],
   templateUrl: './small-card.component.html',
   styleUrls: ['./small-card.component.css'], // ✅ Correção: "styleUrls" com "s"
   standalone: true
 })
 export class SmallCardComponent implements OnInit {
-  @Input()
-  photoCover: string = "https://tm.ibxk.com.br/2021/02/03/03151242518008.jpg";
 
   @Input()
-  cardTitle: string = "Jax mata Clay e mostra que tem faca na bota...";
+  Id:string = "0";
 
-  constructor() {}
+  @Input()
+  photoCover: string = "";
 
-  ngOnInit(): void {}
+  @Input()
+  cardTitle: string = "";
+
+
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe( value =>
+      console.log(value.get('Id'))
+    )
+  }
 }

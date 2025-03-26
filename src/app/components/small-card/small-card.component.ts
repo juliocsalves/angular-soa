@@ -6,7 +6,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
   selector: 'app-small-card',
   imports: [CommonModule, RouterModule],
   templateUrl: './small-card.component.html',
-  styleUrls: ['./small-card.component.css'], // ✅ Correção: "styleUrls" com "s"
+  styleUrls: ['./small-card.component.css', 'small-card.responsive.component.css'], // ✅ Correção: "styleUrls" com "s"
   standalone: true
 })
 export class SmallCardComponent implements OnInit {

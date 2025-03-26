@@ -1,0 +1,129 @@
+@media (max-width: 393px) {
+  .container__small-card {
+    width: 100%;
+  }
+
+  .small-card__photo>img {
+    width: 170px;
+    margin-left: 20px;
+  }
+  .small-card__title {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    height: 100%;
+  }
+
+}
+
+@media screen and (min-width: 394px) and (max-width: 480px) {
+
+  .small-card__photo>img {
+    width: 280px;
+    margin-left: 20px;
+  }
+  .small-card__title {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .small-card__title > h1 > a {
+    font-size: 25px;
+  }
+}
+
+/* Celulares pequenos (acima 480px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .container__small-card {
+    margin-left: 20px;
+    width: 760px;
+  }
+  .small-card__photo>img {
+    width: 340px;
+  }
+  .small-card__title {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+  .small-card__title > h1 > a {
+    font-size: 25px;
+  }
+}
+
+/* Celulares pequenos (acima 576px) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .container__small-card {
+    margin-left: 20px;
+    width: 808px;
+  }
+  .small-card__photo>img {
+    width: 340px;
+  }
+  .small-card__title {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+  .small-card__title > h1 > a {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container__small-card {
+    width: 100%;
+  }
+  .small-card__photo>img {
+    width: 420px;
+  }
+  .small-card__title {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+  .small-card__title > h1 > a {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container__small-card {
+    width: 100%;
+  }
+  .small-card__photo>img {
+    width: 420px;
+  }
+  .small-card__title {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+  .small-card__title > h1 > a {
+    font-size: 1.4rem;
+  }
+}
+
+/* notebooks */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container__small-card {
+    min-width: 500px;
+    width: 100%;
+  }
+  .small-card__photo>img {
+    width: 200px;
+  }
+  .small-card__title {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+  .small-card__title > h1 > a {
+    font-size: 1.4rem;
+  }
+}

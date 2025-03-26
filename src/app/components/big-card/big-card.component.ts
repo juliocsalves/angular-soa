@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-big-card',
   imports: [CommonModule, RouterModule],
   templateUrl: './big-card.component.html',
-  styleUrl: './big-card.component.css',
+  styleUrls: ['./big-card.component.css', 'big-card.responsive.component.css'],
   standalone: true
 })
 export class BigCardComponent implements OnInit {

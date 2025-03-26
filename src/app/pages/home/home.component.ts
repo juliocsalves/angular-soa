@@ -8,7 +8,7 @@ import { dataFake } from '../../data/dataFake';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.css', 'home.responsive.component.css'],
   standalone: true,
   imports: [
     // MenuBarComponent,

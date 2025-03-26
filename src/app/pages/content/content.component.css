@@ -11,7 +11,7 @@
 }
 
 .content__title>h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding-top: 2rem;
 }
 
@@ -24,8 +24,6 @@
   border-radius: 5px;
   width: 580px;
   min-width: 580px;
-  height: 387px;
-  min-height: 387px;
 }
 
 .content__description {

@@ -1,17 +1,61 @@
-@media screen and (max-width: 411px) {
-  .container__menu-title h1 {
-    font-size: 30px;
-  }
-}
-
-@media screen and (min-width: 412px) and (max-width: 642px) {
+@media screen and (max-width: 393px) {
   .container__menu-title h1 {
     font-size: 42px;
+    padding-left: 5px;
   }
 }
 
-@media screen and (min-width: 642px) and (max-width: 1312px) {
+/* Primeira media query (394px a 480px) */
+@media screen and (min-width: 394px) and (max-width: 480px) {
+  .container__menu-title {
+    width: 700px;
+  }
+
   .container__menu-title h1 {
-    font-size: 65px;
+    font-size: 85px;
+    padding-left: 5px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .container__menu-title{
+    width: 800px;
+  }
+  .container__menu-title h1 {
+    font-size: 95px;
+  }
+}
+
+/* Celulares pequenos (acima 576px) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .container__menu-title{
+    width: 846px;
+  }
+  .container__menu-title h1 {
+    font-size: 105px;
+  }
+}
+
+/* Tablets grandes e pequenos notebooks (acima 768px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container__menu-title{
+    width: 100%;
+    margin-top: 30px;
+
+  }
+  .container__menu-title > h1 {
+    font-size: 100px;
+  }
+}
+
+/* notebooks */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container__menu-title {
+    min-width: 1044px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .container__menu-title > h1 {
+    font-size: 135px;
   }
 }

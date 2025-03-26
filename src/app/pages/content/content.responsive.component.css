@@ -1,0 +1,74 @@
+
+
+
+.content__description {
+  color: rgb(205, 205, 205);
+  margin-top: 2rem !important;
+}
+
+.container__content > a {
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  width: 7rem;
+  text-align: center;
+}
+
+.container__content > a:hover {
+  border: 3px solid gray;
+  font-weight: bold;
+  color: gray;
+}
+
+.body__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 393px) {
+  .content__cover>img {
+    border: 5px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    width: 350px;
+    min-width: 350px;
+  }
+
+  .content__title>h1 {
+    font-size: 1.18rem;
+    padding-top: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 394px) and (max-width: 480px) {
+
+}
+
+/* Celulares pequenos (acima 480px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+
+}
+
+/* Celulares pequenos (acima 576px) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* notebooks */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}

@@ -36,8 +36,7 @@
 }
 
 .big-card__photo > a > img {
-  width: 100%;
-  min-width: 400px;
+  width: 400px;
 }
 
 .big-card__title > a {

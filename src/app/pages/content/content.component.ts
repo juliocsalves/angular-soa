@@ -8,7 +8,7 @@ import { dataFake } from '../../data/dataFake';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css'] // ✅ Correção aqui (styleUrls no plural)
+  styleUrls: ['./content.component.css', 'content.responsive.component.css'] // ✅ Correção aqui (styleUrls no plural)
 })
 export class ContentComponent implements OnInit {
   private id: string | null = "0";

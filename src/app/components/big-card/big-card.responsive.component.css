@@ -22,20 +22,23 @@
 @media screen and (min-width: 394px) and (max-width: 480px) {
   .container__big-card {
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: flex-start;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 3rem;
   }
 
   .big-card__title {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 1vh;
+    /* Ocupa toda a altura da tela */
+    F
   }
 
   .big-card__title>a {
@@ -44,149 +47,154 @@
     text-decoration: none;
     color: rgb(209, 209, 209);
     font-size: 3rem;
-    margin-top: 15px;
+    height: 1rem;
   }
 
   .big-card__description {
     margin-top: 5px;
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 576px) {
-  .container__big-card {
-    width: 49rem;
-    min-width: 100%;
-    height: 700px;
-    display: flex;
-    align-items: flex-start;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .big-card__title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .big-card__title>a {
-    display: inline-block;
-    /* opcional */
-    text-decoration: none;
-    color: rgb(209, 209, 209);
-    font-size: 3rem;
-    margin-top: 15px;
-  }
-
-  .big-card__description {
-    margin-top: 5px;
-    font-size: 1.4rem;
-  }
-
-  .big-card__photo {
-    border: 1px solid red;
-    width: 100vw;
-}
-  .big-card__photo > a > img {
-    width: 40rem;
-}
-
-}
-
-/* Celulares pequenos (acima 576px) */
-@media screen and (min-width: 577px) and (max-width: 767px) {
-  .container__big-card {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    align-items: flex-start;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 1px solid blue;
-  }
-
-  .big-card__title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .big-card__title>a {
-    display: inline-block;
-    /* opcional */
-    text-decoration: none;
-    color: rgb(209, 209, 209);
-    font-size: 3rem;
-    margin-top: 15px;
-  }
-
-  .big-card__description {
-    margin-top: 5px;
-    font-size: 1.4rem;
-  }
-}
-
-/* Tablets grandes e pequenos notebooks (acima 768px) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .container__big-card {
-    width: 98%;
-    height: 700px;
-    display: flex;
-    align-items: flex-start;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-right: 5px;
-  }
-
-  .big-card__title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .big-card__title>a {
-    display: inline-block;
-    /* opcional */
-    text-decoration: none;
-    color: rgb(209, 209, 209);
-    font-size: 2.5rem;
-    margin-top: 15px;
-  }
-
-  .big-card__description {
-    margin-top: 5px;
-    font-size: 1.2rem;
-  }
-
-  .big-card__photo>a {
-    display: flex;
-    justify-content: center;
-
-    width: 61rem;
   }
 
   .big-card__photo>a>img {
     width: 40rem;
   }
 
-  /* notebooks */
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .container__menu-title {
-      min-width: 1044px;
-      width: 100%;
-      margin-top: 30px;
+  @media screen and (min-width: 481px) and (max-width: 576px) {
+    .container__big-card {
+      width: 49rem;
+      min-width: 100%;
+      height: 700px;
+      display: flex;
+      align-items: flex-start;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: 1px solid red;
     }
 
-    .container__menu-title>h1 {
-      font-size: 135px;
+    .big-card__title {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .big-card__title>a {
+      display: inline-block;
+      /* opcional */
+      text-decoration: none;
+      color: rgb(209, 209, 209);
+      font-size: 3rem;
+      margin-top: 15px;
+    }
+
+    .big-card__description {
+      margin-top: 5px;
+      font-size: 1.4rem;
+    }
+
+    .big-card__photo {
+      border: 1px solid red;
+      width: 100vw;
+    }
+
+    .big-card__photo>a>img {
+      width: 40rem;
+    }
+
+  }
+
+  /* Celulares pequenos (acima 576px) */
+  @media screen and (min-width: 577px) and (max-width: 767px) {
+    .container__big-card {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      align-items: flex-start;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: 1px solid blue;
+    }
+
+    .big-card__title {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .big-card__title>a {
+      display: inline-block;
+      /* opcional */
+      text-decoration: none;
+      color: rgb(209, 209, 209);
+      font-size: 3rem;
+      margin-top: 15px;
+    }
+
+    .big-card__description {
+      margin-top: 5px;
+      font-size: 1.4rem;
     }
   }
-}
+
+  /* Tablets grandes e pequenos notebooks (acima 768px) */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container__big-card {
+      width: 98%;
+      height: 700px;
+      display: flex;
+      align-items: flex-start;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-right: 5px;
+    }
+
+    .big-card__title {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .big-card__title>a {
+      display: inline-block;
+      /* opcional */
+      text-decoration: none;
+      color: rgb(209, 209, 209);
+      font-size: 2.5rem;
+      margin-top: 15px;
+    }
+
+    .big-card__description {
+      margin-top: 5px;
+      font-size: 1.2rem;
+    }
+
+    .big-card__photo>a {
+      display: flex;
+      justify-content: center;
+
+      width: 61rem;
+    }
+
+    .big-card__photo>a>img {
+      width: 40rem;
+    }
+
+    /* notebooks */
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .container__menu-title {
+        min-width: 1044px;
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .container__menu-title>h1 {
+        font-size: 135px;
+      }
+    }
+  }

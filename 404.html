@@ -2,9 +2,16 @@
 <html>
   <head>
     <script>
-      // Remove o prefixo "/angular-soa" duplicado no redirecionamento
-      const path = window.location.pathname.replace('/angular-soa', '');
-      window.location.replace('/angular-soa/index.html#' + path);
+      // Remove duplicações no caminho e redireciona para o index.html com a rota correta
+      const path = window.location.pathname.replace('/angular-soa', '').replace('/index.html', '');
+      const newPath = path.startsWith('/') ? path.substring(1) : path;
+
+      // Redireciona para o index.html com o hash correto
+      if (newPath) {
+        window.location.replace('/angular-soa/index.html#/' + newPath);
+      } else {
+        window.location.replace('/angular-soa/index.html');
+      }
     </script>
   </head>
   <body></body>

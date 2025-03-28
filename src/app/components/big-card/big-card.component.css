@@ -1,13 +1,14 @@
 .container__big-card {
-  width: 400px;
-  height: 500px;
+  width: 49rem;
+  height: 100vw;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: flex-start;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right:5rem;
 }
 
 .big-card__title {
@@ -22,7 +23,7 @@
 
 .big-card__description {
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 1.3rem;
 }
 
 .big-card__description > a {
@@ -36,7 +37,7 @@
 }
 
 .big-card__photo > a > img {
-  width: 400px;
+  width: 38rem
 }
 
 .big-card__title > a {

@@ -2,9 +2,9 @@
 <html>
   <head>
     <script>
-      // Redireciona para o index.html mantendo a rota original
-      const path = window.location.pathname;
-      window.location.replace('/angular-soa/index.html' + (path ? '#' + path : ''));
+      // Remove o prefixo "/angular-soa" duplicado no redirecionamento
+      const path = window.location.pathname.replace('/angular-soa', '');
+      window.location.replace('/angular-soa/index.html#' + path);
     </script>
   </head>
   <body></body>

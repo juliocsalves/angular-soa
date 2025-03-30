@@ -1,38 +1,53 @@
 @media screen and (max-width: 393px) {
-  .container__menu-title h1 {
-    font-size: 42px;
-    padding-left: 5px;
+  .container__menu-title {
+    width: 27.3rem;
+    min-width: 100%;
+    margin-top: 30px;         /* Adiciona um espaço entre o menu e o topo */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;      /* Evita que o conteúdo de baixo fique muito perto */
+  }
+
+  .container__menu-title>h1 {
+    font-size: 3.2rem;
+    padding: 0;
   }
 }
 
 /* Primeira media query (394px a 480px) */
 @media screen and (min-width: 394px) and (max-width: 480px) {
   .container__menu-title {
-    width: 700px;
+    width: 40.8rem;
+    margin-left: 0;
   }
 
   .container__menu-title h1 {
-    font-size: 85px;
+    font-size: 5rem;
     padding-left: 5px;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
   .container__menu-title{
-    width: 800px;
+    width: 48rem;
+    margin-left: 0;
+    margin-right: 0;
   }
+
   .container__menu-title h1 {
-    font-size: 95px;
+    font-size: 5.5rem;
   }
 }
 
 /* Celulares pequenos (acima 576px) */
 @media screen and (min-width: 577px) and (max-width: 767px) {
   .container__menu-title{
-    width: 846px;
+    width: 51.6rem;
+    min-width: 100vw;
+    margin: 0;
   }
   .container__menu-title h1 {
-    font-size: 105px;
+    font-size: 6.3rem;
   }
 }
 
@@ -41,7 +56,6 @@
   .container__menu-title{
     width: 100%;
     margin-top: 30px;
-
   }
   .container__menu-title > h1 {
     font-size: 6rem;
@@ -51,11 +65,15 @@
 /* notebooks */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .container__menu-title {
-    min-width: 1044px;
+    min-width: 77.5rem;
     width: 100%;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+
   .container__menu-title > h1 {
-    font-size: 135px;
+    font-size: 8rem;
   }
 }

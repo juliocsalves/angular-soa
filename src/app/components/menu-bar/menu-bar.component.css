@@ -6,7 +6,10 @@
   justify-content: center;
   align-items: center;
   height: 7vh;
-  width: 100%;
+  width: 40rem;
+  min-width: 100%;
+  font-size: 1.9rem;
+  padding-bottom: 15px;
 }
 
 

@@ -12,7 +12,8 @@ header{
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+  justify-content: center;
+  width: 100%;
+  height: auto; /* ou height: 100vh se quiser ocupar a altura toda da viewport */
+  box-sizing: border-box; /* garante controle do tamanho */
 }
-

@@ -1,34 +1,46 @@
+/* Extra pequeno: até 393px */
 @media screen and (max-width: 393px) {
-
   .container__big-card {
     width: 100%;
-    padding-right: 5px;
-    padding-left: 0;
+    min-width: 30rem;
     height: 25rem;
+    padding-right: 5px;
+    padding-left: 2.7rem;
+    margin-left: 0;
   }
 
   .container__menu-title h1 {
     font-size: 42px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
+    /* Isso já deve centralizar o título automaticamente devido ao Flexbox */
   }
 
-  .big-card__photo>a>img {
-    width: 24rem;
+  .big-card__photo > a > img {
+    width: 100vw;
+    padding-left: 4px;
+  }
+
+  .big-card__description {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    padding-left: 25px;
+    padding-right: 15px;
   }
 }
 
-/* Primeira media query (394px a 480px) */
+
+/* Pequeno: 394px a 480px */
 @media screen and (min-width: 394px) and (max-width: 480px) {
   .container__big-card {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: flex-start;
     flex-direction: column;
-    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    margin-bottom: 3rem;        /* Espaço entre os contêineres */
+    box-sizing: border-box;     /* Garante que o padding não afete a largura */
   }
 
   .big-card__title {
@@ -36,18 +48,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 1vh;
-    /* Ocupa toda a altura da tela */
-    F
   }
 
-  .big-card__title>a {
+  .big-card__title > a {
     display: inline-block;
-    /* opcional */
     text-decoration: none;
     color: rgb(209, 209, 209);
     font-size: 3rem;
-    height: 1rem;
   }
 
   .big-card__description {
@@ -55,146 +62,147 @@
     font-size: 1.4rem;
   }
 
-  .big-card__photo>a>img {
-    width: 40rem;
+  .big-card__photo > a > img {
+    width: 100%;
+    max-width: 40rem;
   }
 
-  @media screen and (min-width: 481px) and (max-width: 576px) {
-    .container__big-card {
-      width: 49rem;
-      min-width: 100%;
-      height: 700px;
-      display: flex;
-      align-items: flex-start;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      justify-content: flex-start;
-      flex-direction: column;
-      margin-left: 10px;
-      margin-right: 10px;
-      border: 1px solid red;
-    }
+}
 
-    .big-card__title {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .big-card__title>a {
-      display: inline-block;
-      /* opcional */
-      text-decoration: none;
-      color: rgb(209, 209, 209);
-      font-size: 3rem;
-      margin-top: 15px;
-    }
-
-    .big-card__description {
-      margin-top: 5px;
-      font-size: 1.4rem;
-    }
-
-    .big-card__photo {
-      border: 1px solid red;
-      width: 100vw;
-    }
-
-    .big-card__photo>a>img {
-      width: 40rem;
-    }
-
+/* Médio: 481px a 576px */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .container__big-card {
+    width: 48.7rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza conteúdo horizontalmente */
+    justify-content: flex-start;
+    padding: 1rem; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+    box-sizing: border-box; /* Garante que o padding e a borda não afetem o tamanho total */
   }
 
-  /* Celulares pequenos (acima 576px) */
-  @media screen and (min-width: 577px) and (max-width: 767px) {
-    .container__big-card {
-      width: 100%;
-      height: 700px;
-      display: flex;
-      align-items: flex-start;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      justify-content: flex-start;
-      flex-direction: column;
-      margin-left: 10px;
-      margin-right: 10px;
-      border: 1px solid blue;
-    }
 
-    .big-card__title {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .big-card__title>a {
-      display: inline-block;
-      /* opcional */
-      text-decoration: none;
-      color: rgb(209, 209, 209);
-      font-size: 3rem;
-      margin-top: 15px;
-    }
-
-    .big-card__description {
-      margin-top: 5px;
-      font-size: 1.4rem;
-    }
+  .big-card__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
-  /* Tablets grandes e pequenos notebooks (acima 768px) */
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .container__big-card {
-      width: 98%;
-      height: 700px;
-      display: flex;
-      align-items: flex-start;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      justify-content: flex-start;
-      flex-direction: column;
-      padding-right: 5px;
-    }
-
-    .big-card__title {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .big-card__title>a {
-      display: inline-block;
-      /* opcional */
-      text-decoration: none;
-      color: rgb(209, 209, 209);
-      font-size: 2.5rem;
-      margin-top: 15px;
-    }
-
-    .big-card__description {
-      margin-top: 5px;
-      font-size: 1.2rem;
-    }
-
-    .big-card__photo>a {
-      display: flex;
-      justify-content: center;
-
-      width: 61rem;
-    }
-
-    .big-card__photo>a>img {
-      width: 40rem;
-    }
-
-    /* notebooks */
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      .container__menu-title {
-        min-width: 1044px;
-        width: 100%;
-        margin-top: 30px;
-      }
-
-      .container__menu-title>h1 {
-        font-size: 135px;
-      }
-    }
+  .big-card__title > a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+    font-size: 3rem;
   }
+
+  .big-card__description {
+    margin-top: 5px;
+    font-size: 1.4rem;
+  }
+
+  .big-card__photo > a > img {
+    width: 100%;
+    max-width: 40rem;
+  }
+
+}
+
+/* Tablet pequeno: 577px a 767px */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .container__big-card {
+    width: 51.2rem; /* Largura do contêiner */
+    height: 35rem; /* Altura do contêiner */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente dentro do contêiner */
+    justify-content: flex-start; /* Alinha o conteúdo no topo do contêiner */
+    margin-bottom: 0;
+    padding: 15px; /* Adiciona padding dentro do contêiner */
+    box-sizing: border-box; /* Garante que o padding e as bordas não aumentem o tamanho total */
+  }
+
+}
+
+
+/* Tablet grande / notebook pequeno: 768px a 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container__big-card {
+    width: 100%; /* 100% da largura disponível */
+    height: 33rem; /* Altura fixa */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    padding: 15px; /* Se precisar de padding interno */
+    box-sizing: border-box; /* Certifica que o padding e bordas não aumentem o tamanho total */
+  }
+
+  .big-card__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .big-card__title > a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+
+  .big-card__description {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+
+  .big-card__photo > a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 61rem;
+    margin: 0 auto;
+  }
+
+  .big-card__photo > a > img {
+    width: 100%;
+    max-width: 40rem;
+  }
+}
+
+/* Notebooks: 992px a 1199px */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container__big-card {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    padding: 0;
+    padding-top: 0;
+    padding-right: 3rem;
+    margin-right: 10rem;
+  }
+
+  .container__menu-title {
+    min-width: 1044px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .container__menu-title > h1 {
+    font-size: 135px;
+  }
+
+  .big-card__description > a > p {
+    padding-left: 1.6rem;
+    padding-top: 15px;
+  }
+
+  .big-card__photo > a > img {
+    width: 100%;
+    padding: 0;
+    margin: 25px;
+    margin-top: 0;
+  }
+}

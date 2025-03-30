@@ -1,6 +1,7 @@
 @media (max-width: 393px) {
   .container__small-card {
     width: 100%;
+    min-width: 30rem;
   }
 
   .small-card__photo>img {
@@ -19,7 +20,12 @@
 
 @media screen and (min-width: 394px) and (max-width: 480px) {
 
+  .container__small-card {
+    width: 100%;
+  }
+
   .small-card__photo>img {
+    margin-left: 0;
     width: 280px;
     margin-left: 20px;
   }
@@ -89,6 +95,7 @@
   }
   .small-card__title > h1 > a {
     font-size: 1.6rem;
+
   }
 }
 
